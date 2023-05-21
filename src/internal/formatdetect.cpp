@@ -428,6 +428,13 @@ struct OffsetSignature {
 };
 
 const OffsetSignature common_signatures_with_offset[] = {
+    { 0x504B030400000000, 0x00,  4, BitFormat::Zip },      // 50 4B 03 04
+    { 0x504B030600000000, 0x00,  4, BitFormat::Zip },      // 50 4B 03 06
+    { 0x377abcaf271c0000, 0x00,  6, BitFormat::SevenZip }, // 7 z BC AF 27 1C
+    { 0x526172211A070100, 0x00,  7, BitFormat::Rar },      // 52 61 72 21 1A 07 00
+    { 0x526172211A070000, 0x00,  8, BitFormat::Rar5 },     // 52 61 72 21 1A 07 01 00
+    { 0x4D5357494D000000, 0x00,  8, BitFormat::Wim },      // 4D 53 57 49 4D 00 00 00
+
     { 0x2D6C680000000000, 0x02,  3, BitFormat::Lzh },    // -  l  h
     { 0x4E54465320202020, 0x03,  8, BitFormat::Ntfs },   // N  T  F  S  20 20 20 20
     { 0x4E756C6C736F6674, 0x08,  8, BitFormat::Nsis },   // N  u  l  l  s  o  f  t
